@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int arr[5];
+    int i, largest;
+
+    // Prompt user to enter array elements
+    printf("Enter 5 integers: ");
+    for (i = 0; i < 5; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    // Find largest element
+    largest = arr[0];
+    for (i = 1; i < 5; i++) {
+        if (arr[i] > largest) {
+            largest = arr[i];
+        }
+    }
+
+    // Print largest element
+    printf("Largest element in the array: %d\n", largest);
+
+    return 0;
+}
